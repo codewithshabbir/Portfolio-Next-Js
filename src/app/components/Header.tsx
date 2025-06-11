@@ -5,6 +5,7 @@ import logo from "/public/images/muhammad-shabbir-logo.png";
 import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -81,29 +82,29 @@ const Header: React.FC = () => {
         <nav className="justify-between w-full bg-black rounded-full lg:flex hidden transition-all">
           <ul className="flex items-center">
             <li className="text-white mx-10 my-6 relative font-semibold">
-              <a href="#">Home</a>
+              <Link href="#">Home</Link>
             </li>
             <li className="text-white mx-10 my-6 relative font-semibold">
-              <a href="#about-me">About</a>
+              <Link href="#about-me">About</Link>
             </li>
             <li className="text-white mx-10 my-6 relative font-semibold">
-              <a href="#service">Service</a>
+              <Link href="#service">Service</Link>
             </li>
           </ul>
           <div className="logo flex items-center">
-            <a href="#">
+            <Link href="/">
               <Image src={logo} alt="Logo" />
-            </a>
+            </Link>
           </div>
           <ul className="flex items-center">
             <li className="text-white mx-10 my-6 relative font-semibold">
-              <a href="#skills">Skills</a>
+              <Link href="#skills">Skills</Link>
             </li>
             <li className="text-white mx-10 my-6 relative font-semibold">
-              <a href="#projects">Project</a>
+              <Link href={'#projects'}>Projects</Link>
             </li>
             <li className="text-white mx-10 my-6 relative font-semibold">
-              <a href="#contact">Contact</a>
+              <Link href="#contact">Contact</Link>
             </li>
           </ul>
         </nav>
@@ -111,9 +112,9 @@ const Header: React.FC = () => {
         {/* Mobile navigation */}
         <nav className="lg:hidden flex justify-between w-full items-center py-2">
           <div className="logo flex items-center">
-            <a href="#">
+            <Link href="/">
               <Image src={logo} alt="Logo" />
-            </a>
+            </Link>
           </div>
           <HiOutlineMenu
             className="text-white text-2xl cursor-pointer"
@@ -142,22 +143,22 @@ const Header: React.FC = () => {
         </div>
         <ul className="flex flex-col items-center space-y-6">
           <li className="text-white mx-10 relative">
-            <a href="#" onClick={handleCloseMenu}>Home</a>
+            <Link href="#" onClick={handleCloseMenu}>Home</Link>
           </li>
           <li className="text-white mx-10 relative">
-            <a href="#about-me" onClick={handleCloseMenu}>About</a>
+            <Link href="#about-me" onClick={handleCloseMenu}>About</Link>
           </li>
           <li className="text-white mx-10 relative">
-            <a href="#service" onClick={handleCloseMenu}>Service</a>
+            <Link href="#service" onClick={handleCloseMenu}>Service</Link>
           </li>
           <li className="text-white mx-10 relative">
-            <a href="#skills" onClick={handleCloseMenu}>Skills</a>
+            <Link href="#skills" onClick={handleCloseMenu}>Skills</Link>
           </li>
           <li className="text-white mx-10 relative">
-            <a href="#projects" onClick={handleCloseMenu}>Project</a>
+            <Link href="#projects" onClick={handleCloseMenu}>Project</Link>
           </li>
           <li className="text-white mx-10 relative">
-            <a href="#contact" onClick={handleCloseMenu}>Contact</a>
+            <Link href="#contact" onClick={handleCloseMenu}>Contact</Link>
           </li>
         </ul>
       </div>

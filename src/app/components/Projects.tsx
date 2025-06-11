@@ -1,48 +1,16 @@
 import React from "react";
 import { FaChevronRight } from "react-icons/fa";
-import project1 from "/public/images/projects/Restoran.png";
-import project2 from "/public/images/projects/Positivus.png";
-import project3 from "/public/images/projects/Scoop-Home.png";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import Button from "./Button";
+import { Project } from "@/@types/project";
 
-interface Project {
-    title: string;
-    description: string;
-    image: StaticImageData;
-    liveLink: string;
-    tags: string[];
+interface ProjectProps {
+  projectsData: Project[];
 }
 
-const projectsData: Project[] = [
-  {
-    title: "Restoran - Complete Front-end Solution",
-    description:
-      "A sleek, modern, and fully responsive website template for restaurants, built with HTML, CSS, Bootstrap, JavaScript, Slick Slider, and AOS. This template includes sections like the menu, about us, testimonials, gallery, and contact information, designed to offer a seamless user experience across all devices.",
-    image: project1,
-    liveLink: "https://codewithshabbir.github.io/Restoran/",
-    tags: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5", "Slick Slider", "AOS"],
-  },
-  {
-    title: "Positivus - Responsive Landing Page",
-    description:
-      "This is a fully responsive landing page created based on the SMIT - Web Batch 12 Module 1 design on Figma. The project uses HTML, CSS, Bootstrap, and a little bit of JavaScript to deliver a smooth and interactive experience. It adapts seamlessly to different screen sizes, ensuring a great user experience across devices.",
-    image: project2,
-    liveLink: "https://codewithshabbir.github.io/Positivus/",
-    tags: ["HTML5", "CSS3", "JavaScript", "Bootstrap 5"],
-  },
+const Projects: React.FC<ProjectProps> = ({projectsData}) => {
+  console.log(projectsData);
   
-  {
-    title: "Social Scoop - Responsive Landing Page",
-    description:
-      "This responsive HTML template is designed for digital marketing agencies. It features a hero banner that includes a call-to-action form and navigation menu. The project utilizes custom fonts and FontAwesome icons to enhance the user experience.",
-    image: project3,
-    liveLink: "https://html-template-task.netlify.app/",
-    tags: ["HTML5", "CSS3"],
-  },
-];
-
-const Projects: React.FC = () => {
   return (
     <div>
       {projectsData.map((project, index) => (

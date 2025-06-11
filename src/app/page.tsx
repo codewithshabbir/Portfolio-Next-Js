@@ -13,12 +13,13 @@ import SectionHeadings from "./components/SectionHeadings";
 import ServicesCards from "./components/ServicesCards";
 import ProgressBar from "./components/ProgressBar";
 import SoftSkillsSlide from "./components/SoftSkillsSlide";
-import Projects from "./components/Projects";
 import Button from "./components/Button";
 import ContactForm from "./components/ContactForm";
+import TabsComponent from "./components/TabsComponents";
 
 
 export default function Home() {
+    
   return (
    <>
         <section className="banner relative overflow-hidden">
@@ -328,7 +329,7 @@ export default function Home() {
                     <div className="relative w-3 h-3 border border-white rounded-full before:absolute before:h-0.5 before:top-1 before:bg-white before:w-24 before:right-5 after:absolute after:h-0.5 after:top-1 after:bg-white after:w-24 after:left-5"></div>
                 </div>
             </div>
-            <Projects/>
+           <TabsComponent/>
         </section>
         
         <section id="contact" className="contact py-20 px-4 md:px-20">
