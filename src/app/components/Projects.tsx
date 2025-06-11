@@ -36,12 +36,18 @@ const Projects: React.FC<ProjectProps> = ({projectsData}) => {
                 </span>
               ))}
             </div>
-            <div className="relative block mt-8 line">
+            <div className="flex relative gap-4 mt-8 line">
             <Button
                 classes="border-white bg-transparent text-white hover:text-white"
                 title="Live Preview"
                 icon={<FaChevronRight className="ml-1 inline-block text-sm font-bold w-6" />}
                 link={project.liveLink}
+            />
+            <Button
+                classes="border-white bg-transparent text-white hover:text-white"
+                title="Github Link"
+                icon={<FaChevronRight className="ml-1 inline-block text-sm font-bold w-6" />}
+                link={project.githubLink}
             />
             </div>
           </div>
