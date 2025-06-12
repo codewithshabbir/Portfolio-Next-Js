@@ -1,6 +1,17 @@
 import project1 from "/public/images/projects/Restoran.png";
 import project2 from "/public/images/projects/Positivus.png";
 import project3 from "/public/images/projects/Scoop-Home.png";
+import project4 from "/public/images/projects/wev-xv.png";
+import project5 from "/public/images/projects/nike.png";
+import project6 from "/public/images/projects/scent-aura.png";
+import project7 from "/public/images/projects/seo.png";
+import project8 from "/public/images/projects/krist.png";
+import project9 from "/public/images/projects/code-aura-verse.png";
+import project10 from "/public/images/projects/countdown-timer.png";
+import project11 from "/public/images/projects/todo-app.png";
+import project12 from "/public/images/projects/reveal-cards.png";
+import project13 from "/public/images/projects/printer-hand.png";
+import project14 from "/public/images/projects/lovo-skin.png";
 import { Project } from "@/@types/project";
 
 export const projectsData: Project[] = [
@@ -38,7 +49,7 @@ export const projectsData: Project[] = [
     title: "WebXV - Responsive Agency Template",
     description:
       "A fully responsive digital agency website built with React.js and Tailwind CSS. It includes sections like services, portfolio, about, and contact, all structured with modern UI/UX design principles. Smooth navigation is enabled through React Router.",
-    image: project3,
+    image: project4,
     category: "react-js",
     githubLink: "https://github.com/codewithshabbir/WebXV-agency-template",
     liveLink: "https://web-xv-agency-template.vercel.app/",
@@ -48,7 +59,7 @@ export const projectsData: Project[] = [
     title: "Nike - Ecommerce Web Clone",
     description:
       "A sleek eCommerce frontend clone inspired by Nike’s official website. Built using Next.js and styled with Tailwind CSS, it includes product sections, banners, filtering options, and a dynamic layout powered by Sanity CMS and Shadcn UI components.",
-    image: project3,
+    image: project5,
     category: "next-js",
     githubLink: "https://github.com/codewithshabbir/nike-ecommerce-template-3",
     liveLink: "https://nike-ecommerce-template-3.vercel.app/",
@@ -58,7 +69,7 @@ export const projectsData: Project[] = [
     title: "Scent Aura - Ecommerce Frontend Web Clone",
     description:
       "A frontend clone of an eCommerce fragrance store designed with HTML, CSS, and Tailwind CSS. It features a clean product listing layout, modern UI design, and responsive elements to ensure optimal display across devices.",
-    image: project3,
+    image: project6,
     category: "core-frontend",
     githubLink: "https://github.com/codewithshabbir/Scent-Aura",
     liveLink: "https://scent-aura.vercel.app/",
@@ -68,7 +79,7 @@ export const projectsData: Project[] = [
     title: "SEO - Landing Page Website",
     description:
       "A professional landing page template for SEO and digital marketing services. Built using HTML, CSS, and Bootstrap, the layout includes sections for services, testimonials, and a contact form, with a mobile-friendly responsive design.",
-    image: project3,
+    image: project7,
     category: "core-frontend",
     githubLink: "https://github.com/codewithshabbir/all-seo-expert",
     liveLink: "https://codewithshabbir.github.io/all-seo-expert/",
@@ -78,7 +89,7 @@ export const projectsData: Project[] = [
     title: "Krist - Ecommerce Website",
     description:
       "A modern, fully functional eCommerce site built with Next.js, Tailwind CSS, and Sanity CMS. The layout is designed to showcase products with category filtering, rich product detail pages, and seamless navigation using Shadcn UI.",
-    image: project3,
+    image: project8,
     category: "next-js",
     githubLink: "https://github.com/codewithshabbir/krist",
     liveLink: "https://krist-umber.vercel.app/",
@@ -88,7 +99,7 @@ export const projectsData: Project[] = [
     title: "Code Aura Verse - Blog Website",
     description:
       "A modern blog platform powered by Next.js and Sanity CMS. It features dynamic routing for blog posts, responsive layouts, category filtering, and a rich text editor interface. Styled with Tailwind CSS and UI components from Shadcn.",
-    image: project3,
+    image: project9,
     category: "next-js",
     githubLink: "https://github.com/codewithshabbir/code-aura-verse",
     liveLink: "https://code-aura-verse.vercel.app/",
@@ -98,7 +109,7 @@ export const projectsData: Project[] = [
     title: "Countdown Timer App",
     description:
       "A simple yet elegant countdown timer built with Next.js and Tailwind CSS. Users can set a future date and time to track the countdown dynamically. Fully responsive and visually engaging UI.",
-    image: project3,
+    image: project10,
     category: "mini-projects",
     githubLink: "https://github.com/codewithshabbir/countdown-timer-next-js",
     liveLink: "https://codewithshabbir-countdown-timer-next-js.vercel.app/",
@@ -108,7 +119,7 @@ export const projectsData: Project[] = [
     title: "Todo List App",
     description:
       "A React.js-based Todo List application that allows users to add, delete, and mark tasks as complete. Built with Tailwind CSS, it features a clean and responsive design with smooth task management.",
-    image: project3,
+    image: project11,
     category: "mini-projects",
     githubLink: "https://github.com/codewithshabbir/todo-list-react-js",
     liveLink: "https://todo-list-react-js-six-omega.vercel.app/",
@@ -118,10 +129,46 @@ export const projectsData: Project[] = [
     title: "Reveal Card on Hover",
     description:
       "A mini interactive UI project built with React.js and Tailwind CSS. It reveals hidden content inside a card when hovered over, demonstrating modern CSS animations and hover transitions.",
-    image: project3,
+    image: project12,
     category: "mini-projects",
-    githubLink: "https://github.com/codewithshabbir/reveal-card-content-on-hover",
+    githubLink:
+      "https://github.com/codewithshabbir/reveal-card-content-on-hover",
     liveLink: "https://codewithshabbir.github.io/reveal-card-content-on-hover/",
     tags: ["React Js", "Tailwand CSS"],
+  },
+  {
+    title: "PrinterHand – Online Printing Service",
+    description:
+      "A professional WordPress-based printing service website offering custom prints, business cards, flyers, and more. Designed for user-friendly navigation, responsive layout, and easy order placement.",
+
+    image: project13,
+    category: "wordpress-projects",
+    githubLink: "",
+    liveLink: "https://printerhand.com/",
+    tags: [
+      "Wordpress",
+      "Slider Revolution",
+      "WooCommerce",
+      "Elementor",
+      "Contact Form 7",
+      "Site Kit",
+      "MailChimp",
+    ],
+  },
+  {
+    title: "LovoSkin – Skincare E-commerce Store",
+    description:
+      "A premium Shopify-based e-commerce store for skincare products. Features a clean and responsive design, product filtering, secure checkout, and seamless user experience optimized for conversions.",
+    image: project14, 
+    category: "shopify-projects",
+    githubLink: "",
+    liveLink: "https://lovoskin.com/",
+    tags: [
+      "Shopify",
+      "Liquid",
+      "Responsive Design",
+      "E-commerce",
+      "Online Store",
+    ],
   },
 ];

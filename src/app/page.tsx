@@ -229,7 +229,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 
-                                <div className="flex justify-between items-center mt-4">
+                                {/* <div className="flex justify-between items-center mt-4">
                                     <div>
                                         <h2 className="text-xl font-medium">Governor Sindh Initiative</h2>
                                         <p className="text-sm text-gray-500">Artificial Intelligence, Web 3.0 & Metaverse – In Progress</p>
@@ -237,7 +237,7 @@ export default function Home() {
                                     <div>
                                         <p className="bg-orange-400 text-white px-2 py-1 rounded text-xs">Enrolled 2024 - Ongoing</p>
                                     </div>
-                                </div>
+                                </div> */}
 
                                 <div className="flex justify-between items-center mt-4">
                                     <div>
@@ -249,7 +249,7 @@ export default function Home() {
                                     </div>
                                 </div>
                                 
-                                <div className="flex justify-between items-center mt-4">
+                                {/* <div className="flex justify-between items-center mt-4">
                                     <div>
                                         <h2 className="text-xl font-medium">Jawan Pakistan</h2>
                                         <p className="text-sm text-gray-500">Front-End Development Course</p>
@@ -257,7 +257,7 @@ export default function Home() {
                                     <div>
                                         <p className="bg-orange-400 text-white px-2 py-1 rounded text-xs">5 Months Duration</p>
                                     </div>
-                                </div>
+                                </div> */}
                                 
                                 <div className="flex justify-between items-center mt-4">
                                     <div>

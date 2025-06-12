@@ -8,16 +8,21 @@ interface ProjectProps {
   projectsData: Project[];
 }
 
-const Projects: React.FC<ProjectProps> = ({projectsData}) => {
+const Projects: React.FC<ProjectProps> = ({ projectsData }) => {
   console.log(projectsData);
-  
+
   return (
     <div>
       {projectsData.map((project, index) => (
-        <div key={index} data-aos="fade-up" className="grid grid-cols-1 md:grid-cols-12 projects-wrapper gap-6 my-4 p-5 rounded-3xl">
+        <div
+          key={index}
+          data-aos="fade-up"
+          className="grid grid-cols-1 md:grid-cols-12 projects-wrapper gap-6 my-4 p-5 rounded-3xl"
+        >
           <div className="md:col-span-4">
             <Image
-              className="rounded-3xl w-full" layout="responsive"
+              className="rounded-3xl w-full"
+              layout="responsive"
               src={project.image}
               alt={project.title}
             />
@@ -31,24 +36,33 @@ const Projects: React.FC<ProjectProps> = ({projectsData}) => {
             </p>
             <div className="flex flex-wrap gap-2">
               {project.tags.map((tags, index) => (
-                <span key={index} className="bg-orange-400 text-white rounded-xl px-3 py-[0.5px]">
+                <span
+                  key={index}
+                  className="bg-orange-400 text-white rounded-xl px-3 py-[0.5px]"
+                >
                   {tags}
                 </span>
               ))}
             </div>
-            <div className="flex relative gap-4 mt-8 line">
-            <Button
+            <div className="flex flex-col md:flex-row items-start relative gap-4 mt-8 line">
+              <Button
                 classes="border-white bg-transparent text-white hover:text-white"
                 title="Live Preview"
-                icon={<FaChevronRight className="ml-1 inline-block text-sm font-bold w-6" />}
+                icon={
+                  <FaChevronRight className="ml-1 inline-block text-sm font-bold w-6" />
+                }
                 link={project.liveLink}
-            />
-            <Button
-                classes="border-white bg-transparent text-white hover:text-white"
-                title="Github Link"
-                icon={<FaChevronRight className="ml-1 inline-block text-sm font-bold w-6" />}
-                link={project.githubLink}
-            />
+              />
+              {project.githubLink && (
+                <Button
+                  classes="border-white bg-transparent text-white hover:text-white"
+                  title="Github Link"
+                  icon={
+                    <FaChevronRight className="ml-1 inline-block text-sm font-bold w-6" />
+                  }
+                  link={project.githubLink}
+                />
+              )}
             </div>
           </div>
         </div>
