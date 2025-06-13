@@ -112,7 +112,7 @@ export default function Home() {
                             classes="border-orange-500 bg-transparent stroke-orange-500 hover:text-white"
                             title="Download Resume"
                             icon={<FaDownload className="ml-1 inline-block text-sm font-bold" width={24} height={24} />}
-                            link="/resume/frontend-developement-resume.pdf"
+                            link="/resume/muhammad-shabbir.pdf"
                         />
                         </div>
                     </div>
