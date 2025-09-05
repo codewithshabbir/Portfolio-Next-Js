@@ -152,7 +152,7 @@ export default function Home() {
 
               <div className="mt-3 w-full">
                 <label className="text-black inline-block mb-1">
-                  Figma to HTML Conversion
+                  Figma to React Js/ Next Js Conversion
                 </label>
                 <ProgressBar percentage={"100%"} width="w-full" />
               </div>

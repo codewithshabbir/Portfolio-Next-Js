@@ -23,7 +23,7 @@ const servicesData:ServiceItem[] = [
   },
   {
     id: 3,
-    title: "Figma to HTML Conversion",
+    title: "Figma to ReactJs/NextJs Conversion",
     image: project3,
   },
 ];
